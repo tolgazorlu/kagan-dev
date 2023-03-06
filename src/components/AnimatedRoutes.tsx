@@ -1,6 +1,6 @@
 import { Route, Routes, useLocation } from "react-router-dom";
-import About from "../pages/About";
 import Home from "../pages/Home";
+import About from '../components/About'
 import Assets from "./Assets";
 import Tools from "./Tools";
 import { AnimatePresence } from "framer-motion";

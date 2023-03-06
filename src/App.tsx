@@ -4,7 +4,7 @@ import Navbar from './components/Navbar'
 
 export default function App() {
   return (
-    <div className="h-screen">
+    <div>
       <BrowserRouter>
         <Navbar />
         <AnimatedRoutes />
