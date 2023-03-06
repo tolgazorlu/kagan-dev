@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Orbitron;
+    src: url('/src/assets/fonts/orbitron/Orbitron-Medium.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
