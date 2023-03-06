@@ -1,5 +1,6 @@
 import Hero from '../components/Hero'
 import { motion } from 'framer-motion'
+import Assets from '../components/Assets'
 
 export default function Home() {
 
@@ -10,6 +11,7 @@ export default function Home() {
     exit = {{opacity: 0}}
     >
       <Hero />
+      <Assets />
     </motion.div>
       
   )

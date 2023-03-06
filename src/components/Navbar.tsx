@@ -5,12 +5,9 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 const navigation = [
   { name: 'Home', href: '/', current: true },
   { name: 'About', href: '/about', current: false },
-  
+  { name: 'Assets', href: '/assets', current: false },
+  { name: 'Tools', href: '/tools', current: false },
 ]
-
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ')
-}
 
 export default function Navbar() {
   return (
