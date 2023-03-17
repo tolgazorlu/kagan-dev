@@ -1,4 +1,4 @@
-import Hero from '../components/Hero'
+import About from '../components/About'
 import { motion } from 'framer-motion'
 import Assets from '../components/Assets'
 
@@ -10,7 +10,7 @@ export default function Home() {
     animate={{opacity: 1}}
     exit = {{opacity: 0}}
     >
-      <Hero />
+      <About />
       <Assets />
     </motion.div>
       
