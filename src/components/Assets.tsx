@@ -13,10 +13,10 @@ import "swiper/css";
 import Card from "./Card";
 
 const assets = [
-  { name: "asset-1", url: "src/assets/game/dunklogo.png", href: "" },
-  { name: "asset-2", url: "src/assets/game/silBastanLogo.png", href: "" },
-  { name: "asset-3", url: "src/assets/game/sillyBasketballIcon.png", href: "" },
-  { name: "asset-4", url: "src/assets/game/sudokulogonew.png", href: "" },
+  { name: "asset-1", url: "src/assets/game/dunklogo.png", href: "#" },
+  { name: "asset-2", url: "src/assets/game/silBastanLogo.png", href: "#" },
+  { name: "asset-3", url: "src/assets/game/sillyBasketballIcon.png", href: "#" },
+  { name: "asset-4", url: "src/assets/game/sudokulogonew.png", href: "#" },
 ];
 
 export default () => {
@@ -39,9 +39,9 @@ export default () => {
           onSlideChange={() => console.log("slide change")}
           className="px-20 py-5"
         >
-          {assets.map((item) => {
+          {assets.map((item, index) => {
             return (
-              <SwiperSlide>
+              <SwiperSlide key={index}>
                 <Card asset={item} />
               </SwiperSlide>
             );
