@@ -6,7 +6,6 @@ const navigation = [
   { name: 'Home', href: '/', current: true },
   { name: 'About', href: '/about', current: false },
   { name: 'Assets', href: '/assets', current: false },
-  { name: 'Tools', href: '/tools', current: false },
 ]
 
 export default function Navbar() {

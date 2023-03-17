@@ -2,7 +2,6 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "../pages/Home";
 import About from '../components/About'
 import Assets from "./Assets";
-import Tools from "./Tools";
 import { AnimatePresence } from "framer-motion";
 
 export default function AnimatedRoutes() {
@@ -14,7 +13,6 @@ export default function AnimatedRoutes() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/assets" element={<Assets />} />
-        <Route path="/tools" element={<Tools />} />
       </Routes>
     </AnimatePresence>
   );

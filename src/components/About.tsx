@@ -9,7 +9,7 @@ export default function About() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div className="p-10 md:p-0 md:h-5/6 w-full flex justify-center items-center flex-col sm:flex-col md:flex-row gap-2 md:gap-24 absolute">
+      <div className="p-10 md:p-36 md:h-full w-full flex justify-center items-center flex-col sm:flex-col lg:flex-row gap-2 md:gap-24">
         <div className="w-96 h-96 rounded-md">
           <img src={Flyme} />
         </div>
