@@ -1,4 +1,3 @@
-import React from "react";
 import Flyme from "../assets/about/flyme.png";
 import { motion } from "framer-motion";
 
@@ -9,11 +8,8 @@ export default function About() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div className="p-10 md:p-0 md:h-5/6 w-full flex justify-center items-center flex-col sm:flex-col md:flex-row gap-2 md:gap-24 absolute">
-        <div className="w-96 h-96 rounded-md">
-          <img src={Flyme} />
-        </div>
-        <div className="flex flex-col gap-4 w-6/12 md:w-3/12 h-80">
+      <div className="px-10 flex justify-center items-center flex-col sm:flex-col md:flex-row gap-2 md:gap-24">
+        <div className="flex flex-col gap-4 w-2/6">
           <div className="text-4xl font-bold font-orbitron">
             <span className="text-black">KAGAN</span>{" "}
             <span className="text-cyan-500">AYTEN</span>
@@ -28,17 +24,13 @@ export default function About() {
           </div>
           <div>
             <p className="text-black">
-              My name is David Parker. I am a graphic designer, and I'm very
-              passionate and dedicated to my work. With 20 years experience as a
-              professional a graphic designer, I have acquired the skills and
-              knowledge.
+              My name is Kagan Ayten. I am a Unity Developer, and I'm very
+              passionate and dedicated to my work.
             </p>
           </div>
-          <div>
-            <button className="bg-gradient-to-r from-blue-500 to-cyan-600 px-10 py-2 rounded-lg font-bold text-white">
-              Learn More
-            </button>
-          </div>
+        </div>
+        <div className="w-2/6 h-2/6 rounded-md">
+          <img src={Flyme} />
         </div>
       </div>
     </motion.div>

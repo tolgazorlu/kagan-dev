@@ -1,13 +1,11 @@
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Fragment } from "react";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: 'Home', href: '/', current: true },
-  { name: 'About', href: '/about', current: false },
-  { name: 'Assets', href: '/assets', current: false },
-  { name: 'Tools', href: '/tools', current: false },
-]
+  { name: "Home", href: "/", current: true },
+  { name: "About", href: "/about", current: false },
+];
 
 export default function Navbar() {
   return (
@@ -29,7 +27,7 @@ export default function Navbar() {
               </div>
               <div className="px-24 flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
                 <div className="flex flex-shrink-0 items-center">
-                  <span className='text-black'>ka6an.dev</span>
+                  <span className="text-black">ka6an.<span className="text-cyan-500">dev</span></span>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
@@ -37,8 +35,8 @@ export default function Navbar() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className='text-gray-800 hover:bg-gray-700 hover:text-black rounded-md px-3 py-2 text-sm font-medium'
-                        aria-current={item.current ? 'page' : undefined}
+                        className="text-gray-800 hover:bg-gray-700 hover:text-black rounded-md px-3 py-2 text-sm font-medium"
+                        aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
                       </a>
@@ -56,8 +54,8 @@ export default function Navbar() {
                   key={item.name}
                   as="a"
                   href={item.href}
-                  className='text-gray-800 hover:bg-gray-700 hover:text-black block rounded-md px-3 py-2 text-base font-medium'
-                  aria-current={item.current ? 'page' : undefined}
+                  className="text-gray-800 hover:bg-gray-700 hover:text-black block rounded-md px-3 py-2 text-base font-medium"
+                  aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
@@ -67,5 +65,5 @@ export default function Navbar() {
         </>
       )}
     </Disclosure>
-  )
+  );
 }

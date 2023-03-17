@@ -13,20 +13,19 @@ import "swiper/css";
 import Card from "./Card";
 
 const assets = [
-  { name: "asset-1", url: "src/assets/game/dunklogo.png", href: ""},
+  { name: "asset-1", url: "src/assets/game/dunklogo.png", href: "" },
   { name: "asset-2", url: "src/assets/game/silBastanLogo.png", href: "" },
   { name: "asset-3", url: "src/assets/game/sillyBasketballIcon.png", href: "" },
-  { name: "asset-4", url: "src/assets/game/sudokulogonew.png",href: "" },
+  { name: "asset-4", url: "src/assets/game/sudokulogonew.png", href: "" },
 ];
 
 export default () => {
   return (
-    <div className="h-5/6 lg:px-24 w-full flex flex-col">
-      <div className="w-full flex justify-start text-xl md:text-2xl lg:text-2xl font-bold font-orbitron px-24">
-        <span className="text-black">Creative</span>{" "}
-        <span className="text-cyan-500">Games</span>
+    <div>
+      <div className="text-xl md:text-2xl lg:text-2xl font-bold font-orbitron px-24">
+        <span className="text-black">Creative Games</span>
       </div>
-      <div className="h-full w-full justify-center items-center">
+      <div className="px-24">
         <Swiper
           // install Swiper modules
           modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -41,7 +40,7 @@ export default () => {
         >
           {assets.map((item) => {
             return (
-              <SwiperSlide>
+              <SwiperSlide className="my-10">
                 <Card asset={item} />
               </SwiperSlide>
             );
