@@ -9,7 +9,7 @@ export default function About() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div className="flex items-center justify-start">
+      <div className="flex items-center justify-start flex-col lg:flex-row">
         <div className="w-1/2">
           <img src={Flyme} />
         </div>
