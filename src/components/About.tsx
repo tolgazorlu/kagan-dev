@@ -28,16 +28,9 @@ export default function About() {
           </div>
           <div>
             <p className="text-black">
-              My name is David Parker. I am a graphic designer, and I'm very
-              passionate and dedicated to my work. With 20 years experience as a
-              professional a graphic designer, I have acquired the skills and
-              knowledge.
+              My name is Kagan Ayten. I am a unity game developer, and I'm very
+              passionate and dedicated to my work.
             </p>
-          </div>
-          <div>
-            <button className="bg-gradient-to-r from-blue-500 to-cyan-600 px-10 py-2 rounded-lg font-bold text-white">
-              Learn More
-            </button>
           </div>
         </div>
       </div>
