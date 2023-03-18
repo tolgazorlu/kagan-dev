@@ -41,7 +41,7 @@ export default () => {
         >
           {assets.map((item, index) => {
             return (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={index} className="my-10">
                 <Card asset={item} />
               </SwiperSlide>
             );
